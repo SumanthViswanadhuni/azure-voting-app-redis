@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sumanthviswanadhuniazurevotingappredis 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sumanthviswanadhuniazurevotingappredis
+  template:
+    metadata:
+      labels:
+        app: sumanthviswanadhuniazurevotingappredis 
+    spec:
+      containers:
+        - name: sumanthviswanadhuniazurevotingappredis 
+          image: sumoregistry1.azurecr.io/sumanthviswanadhuniazurevotingappredis
+          ports:
+          - containerPort: 80
