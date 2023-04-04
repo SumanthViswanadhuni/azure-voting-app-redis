@@ -77,6 +77,3 @@ stages:
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
 
-
-#RamaSumanthViswanadhuni 
-#SaraswathiViswanadhuni
